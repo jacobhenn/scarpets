@@ -2,7 +2,7 @@
 
 ## Reccomended usage
 
-Clone this repo to wherever is most convenient. Then, symlink the scripts/ folder to a .minecraft/saves/my-world/scripts/ folder in all of the minecraft worlds you want to use them in.
+Clone this repo to wherever is most convenient. Then, symlink the `scripts/` folder to a `.minecraft/saves/my-world/scripts/` folder in all of the minecraft worlds you want to use them in.
 
 ## re.sc
 
