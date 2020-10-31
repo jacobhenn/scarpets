@@ -8,7 +8,11 @@ usage:
 /checkpoint here - set the checkpoint to the players current location
 /checkpoint block-pre <block> - change the block checkpoints are made of before the player has activated them
 /checkpoint block-post <block> - change the block checkpoints are made of after the player has activated them
+<<<<<<< HEAD
 /checkpoint block-death'
+=======
+/checkpoint block-death';
+>>>>>>> d7e480c75fd8d0004fb5522dc8fd41ea7bc1c928
 
 global_is_on = 0;
 global_checkpoint = null;
