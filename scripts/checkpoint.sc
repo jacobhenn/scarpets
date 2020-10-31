@@ -1,4 +1,5 @@
-__command() -> "checkpoint tracker
+__command() -> "
+checkpoint tracker
 usage:
 /checkpoint on - turn checkpoint tracking on
 /checkpoint off - turn checkpoint tracking off
