@@ -6,8 +6,8 @@ usage:
 /checkpoint reset - unlock all checkpoints
 /checkpoint last - teleport to the last set checkpoint
 /checkpoint here - set the checkpoint to the players current location
-/checkpoint block-pre <block> - set the block checkpoints are made of before the player has activated them
-/checkpoint block-post <block> - set the block checkpoints are made of after the player has activated them'
+/checkpoint block-pre <block> - change the block checkpoints are made of before the player has activated them
+/checkpoint block-post <block> - change the block checkpoints are made of after the player has activated them
 /checkpoint block-death'
 
 global_is_on = 0;
@@ -23,6 +23,8 @@ __on_tick(
     pz = p ~ 'z';
     under_block = block(px, py-1, pz);
     if(under_block == global_death_block,
-        modify(player, 'pos', global_checkpoint);
+        modify(player, 'pos', global_checkpoint)
+     , under_block == global_pre_block,
+        global_checkpoint = (floor(px) + 0.5, py, floor(pz) + 0.5)
     );
 );
