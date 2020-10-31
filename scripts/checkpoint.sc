@@ -1,15 +1,16 @@
-__command() -> "
-checkpoint tracker
-usage:
-/checkpoint on - turn checkpoint tracking on
-/checkpoint off - turn checkpoint tracking off
-/checkpoint toggle - toggle checkpoint tracking
-/checkpoint reset - unlock all checkpoints
-/checkpoint last - teleport to the last set checkpoint
-/checkpoint here - set the checkpoint to the players current location
-/checkpoint block-pre <block> - change the block checkpoints are made of before the player has activated them
-/checkpoint block-post <block> - change the block checkpoints are made of after the player has activated them
-/checkpoint block-death";
+__command() -> (
+    print("checkpoint tracker");
+    print("usage:");
+    print("/checkpoint on - turn checkpoint tracking on");
+    print("/checkpoint off - turn checkpoint tracking off");
+    print("/checkpoint toggle - toggle checkpoint tracking");
+    print("/checkpoint reset - unlock all checkpoints");
+    print("/checkpoint last - teleport to the last set checkpoint");
+    print("/checkpoint here - set the checkpoint to the players current location");
+    print("/checkpoint block-pre <block> - change the block checkpoints are made of before the player has activated them");
+    print("/checkpoint block-post <block> - change the block checkpoints are made of after the player has activated them");
+    print("/checkpoint block-death");
+);
 
 global_is_on = 0;
 global_checkpoint = null;
