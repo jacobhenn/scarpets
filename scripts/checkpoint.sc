@@ -30,4 +30,4 @@ go() -> (
     );
 );
 
-entity_event(player(), 'on_tick', 'go');
+entity_event(player(), 'on_tick', go());
