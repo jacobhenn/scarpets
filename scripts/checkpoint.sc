@@ -1,5 +1,3 @@
-__config -> ('scope', 'global');
-
 __command() -> '
 checkpoint tracker
 usage:
