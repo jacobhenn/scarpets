@@ -29,9 +29,9 @@ _go(p) -> (
     if(under_block == global_death_block,
         modify(p, 'pos', global_checkpoint);
     );
-    //if(under_block == global_pre_block,
-    //    global_checkpoint = l(floor(px)+0.5, py, floor(pz)+0.5);
-    //);
+    if(under_block == global_pre_block,
+        global_checkpoint = l(floor(px)+0.5, py, floor(pz)+0.5);
+    );
 );
 
 entity_event(player(), 'on_tick', '_go');
