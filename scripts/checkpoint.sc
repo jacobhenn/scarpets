@@ -27,10 +27,9 @@ _go(p) -> (
     pz = p ~ 'z';
     under_block = block(px, py-1, pz);
     if(under_block == global_death_block,
-        modify(p, 'pos', global_checkpoint);
-    );
-    if(under_block == global_pre_block,
-        here();
+        modify(p, 'pos', global_checkpoint)
+    , under_block == global_pre_block,
+        here()
     );
 );
 
