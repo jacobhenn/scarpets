@@ -18,7 +18,7 @@ global_post_block = 'chiseled_quartz';
 global_death_block = 'blue_concrete';
 
 here() -> (
-    global_checkpoint = player() ~ 'pos';
+    global_checkpoint = l(floor(player() ~ 'x')+0.5, player() ~ 'y', floor(player() ~ 'z')+0.5);
 );
 
 _go(p) -> (
