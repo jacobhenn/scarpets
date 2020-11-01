@@ -23,7 +23,7 @@ go(p) -> (
     px = p ~ 'x';
     py = p ~ 'y';
     pz = p ~ 'z';
-    under_block = block(px, "py-1", pz);
+    under_block = block(px, py-1, pz);
     if(under_block == global_death_block,
         modify(player, 'pos', global_checkpoint);
      , under_block == global_pre_block,
