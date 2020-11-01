@@ -1,3 +1,5 @@
+__config -> ('scope', 'global');
+
 __command() -> '
 checkpoint tracker
 usage:
@@ -17,8 +19,7 @@ global_pre_block = 'chiseled_quartz';
 global_post_block = 'chiseled_quartz';
 global_death_block = 'blue_concrete';
 
-go() -> (
-    p = player;
+go(p) -> (
     px = p ~ 'x';
     py = p ~ 'y';
     pz = p ~ 'z';
@@ -30,4 +31,4 @@ go() -> (
     );
 );
 
-entity_event(player(), 'on_tick', go());
+entity_event(player(), 'on_tick', 'go');
