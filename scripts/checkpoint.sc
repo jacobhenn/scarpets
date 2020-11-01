@@ -13,8 +13,8 @@ usage:
 
 global_is_on = 0;
 global_checkpoint = null;
-global_pre_block = 'chiseled_quartz';
-global_post_block = 'chiseled_quartz';
+global_pre_block = 'chiseled_quartz_block';
+global_post_block = 'chiseled_quartz_block';
 global_death_block = 'blue_concrete';
 
 here() -> (
