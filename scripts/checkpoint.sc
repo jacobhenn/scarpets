@@ -27,7 +27,7 @@ go(p) -> (
     if(under_block == global_death_block,
         modify(player, 'pos', global_checkpoint);
      , under_block == global_pre_block,
-        global_checkpoint = ("floor(px) + 0.5", py, "floor(pz) + 0.5");
+        global_checkpoint = (floor(px)+0.5, py, floor(pz)+0.5);
     );
 );
 
