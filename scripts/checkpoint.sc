@@ -17,7 +17,11 @@ global_pre_block = 'chiseled_quartz';
 global_post_block = 'chiseled_quartz';
 global_death_block = 'blue_concrete';
 
-go(p) -> (
+here() -> (
+    global_checkpoint = player() ~ 'pos';
+);
+
+_go(p) -> (
     px = p ~ 'x';
     py = p ~ 'y';
     pz = p ~ 'z';
@@ -31,4 +35,4 @@ go(p) -> (
     //);
 );
 
-entity_event(player(), 'on_tick', 'go');
+entity_event(player(), 'on_tick', '_go');
